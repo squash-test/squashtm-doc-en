@@ -144,95 +144,95 @@
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/exigences-squash/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/squash-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/creer-organiser-referentiel-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/creating-organizing-requirements-repository/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/couvrir-exigences-tests/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/covering-tests-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/couverture-validation-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/coverage-validation-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/versionner-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/making-requirements-versions/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/importer-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/importing-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/exporter-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/exporting-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/tableau-bord-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/requirements-dashboard/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-exigences/rechercher-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-requirements/searching-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/cas-test-squash/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/test-cases-squash/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/creer-organiser-patrimoine-cas-test/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/creating-organizing-test-cases-assets/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/associer-cas-test-exigences/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/linking-test-cases-requirements/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/rediger-scenario-classique/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/conceiving-classic-scenario/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/variabiliser-modulariser-scenario-classique/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/variables-modularize-classic-test-cases/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/rediger-script-bdd/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/conceiving-script-bdd/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/variabiliser-script-bdd/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/variables-script-bdd/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/rediger-script-gherkin/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/conceiving-script-gherkin/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/variabiliser-script-gherkin/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/variables-script-gherkin/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/importer-cas-test/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/test-cases-importing/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/exporter-cas-test/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/test-cases-exporting/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/suivre-executions-cas-test/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/following-test-cases-runs/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/tableau-bord-cas-test/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/test-cases-dashboard/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/gestion-cas-test/rechercher-cas-test/</loc>
+     <loc>https://squash-test.github.io/squashtm-doc-en/user-guide/managing-test-cases/searching-test-cases/</loc>
      <lastmod>2021-05-31</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
