@@ -1,0 +1,2854 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Squash TM user documentation starting from 2.0 previous documentation is available at: ">
+      
+      
+      
+        <meta name="author" content="Henix">
+      
+      
+        <link rel="canonical" href="https://squash-test.github.io/squashtm-doc-en/user-guide/general-introduction/object-features/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
+    
+    
+      
+        <title>Transversal Features - Squash TM Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.875de78c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe+UI:300,400,400i,700%7C&display=fallback">
+        <style>:root{--md-text-font-family:"Segoe UI";--md-code-font-family:""}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modifier-les-champs-dun-objet" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Squash TM Documentation" class="md-header__button md-logo" aria-label="Squash TM Documentation" data-md-component="logo">
+      
+  <img src="../../../resources/logo_squash_icon_white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Squash TM Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Transversal Features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/squash-test/squashtm-doc-en/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    squash-test/squashtm-doc-en
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      About Squash TM
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../install-guide/" class="md-tabs__link">
+        Install Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../admin-guide/presentation-generale/presentation-administration-squash/" class="md-tabs__link">
+        Administrator Guide
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../squash-workspaces/" class="md-tabs__link md-tabs__link--active">
+        User Guide
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../plugin-guides/ad-ldap-guide/" class="md-tabs__link">
+        Plugins Guides
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Squash TM Documentation" class="md-nav__button md-logo" aria-label="Squash TM Documentation" data-md-component="logo">
+      
+  <img src="../../../resources/logo_squash_icon_white.svg" alt="logo">
+
+    </a>
+    Squash TM Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/squash-test/squashtm-doc-en/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    squash-test/squashtm-doc-en
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        About Squash TM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Install Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Install Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Install Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install-guide/" class="md-nav__link">
+        Installation instructions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Administrator Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Administrator Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Administrator Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Présentation générale
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Présentation générale" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Présentation générale
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/presentation-generale/presentation-administration-squash/" class="md-nav__link">
+        Présentation générale de l'espace Administration de Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/presentation-generale/fonctionnalites-transverses/" class="md-nav__link">
+        Fonctionnalités transverses de l’administration
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Gestion des utilisateurs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des utilisateurs" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des utilisateurs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-utilisateurs/gerer-utilisateur/" class="md-nav__link">
+        Gérer un utilisateur
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-utilisateurs/gerer-equipe/" class="md-nav__link">
+        Gérer une équipe
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" type="checkbox" id="__nav_3_2_3" >
+      
+      <label class="md-nav__link" for="__nav_3_2_3">
+        Gérer les habilitations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gérer les habilitations" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Gérer les habilitations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-utilisateurs/attribuer-habilitations/" class="md-nav__link">
+        Attribuer des habilitations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-utilisateurs/tables-habilitations/" class="md-nav__link">
+        Les tables des habilitations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-utilisateurs/historique-connexions/" class="md-nav__link">
+        Consulter et exporter l’historique des connexions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Gestion des projets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des projets" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des projets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-projets/gerer-projet/" class="md-nav__link">
+        Gérer un projet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-projets/configurer-projet/" class="md-nav__link">
+        Configurer un projet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-projets/gerer-modele-projet/" class="md-nav__link">
+        Gérer un modèle de projet
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        Gestion des jalons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des jalons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des jalons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-jalons/activer-jalons/" class="md-nav__link">
+        Activer les jalons dans Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-jalons/gerer-jalon/" class="md-nav__link">
+        Gérer un jalon
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-jalons/dupliquer-synchroniser-jalon/" class="md-nav__link">
+        Dupliquer et synchroniser un jalon
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      <label class="md-nav__link" for="__nav_3_5">
+        Personnalisation des entités
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Personnalisation des entités" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Personnalisation des entités
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/personnalisation-entites/gerer-champs-persos/" class="md-nav__link">
+        Gérer les champs personnalisés
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/personnalisation-entites/gerer-listes-persos/" class="md-nav__link">
+        Gérer les listes personnalisées
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/personnalisation-entites/gerer-liens-exigences/" class="md-nav__link">
+        Gérer les liens entre exigences
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      <label class="md-nav__link" for="__nav_3_6">
+        Gestion des serveurs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des serveurs" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des serveurs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6_1" type="checkbox" id="__nav_3_6_1" >
+      
+      <label class="md-nav__link" for="__nav_3_6_1">
+        Gérer les bugtrackeurs et serveurs de synchronisation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gérer les bugtrackeurs et serveurs de synchronisation" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Gérer les bugtrackeurs et serveurs de synchronisation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-serveurs/gerer-bugtracker-serveur-synchro/" class="md-nav__link">
+        Gérer les bugtrackers et serveurs de synchronisation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-serveurs/configurer-oauth/" class="md-nav__link">
+        Configurer le protocole d'authentification OAuth 1a
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-serveurs/gerer-serveur-autom/" class="md-nav__link">
+        Gérer les serveurs d'exécution automatisée
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-serveurs/gerer-serveur-scm/" class="md-nav__link">
+        Gérer les serveurs de partage de code source
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      <label class="md-nav__link" for="__nav_3_7">
+        Gestion du système
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion du système" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion du système
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-systeme/infos-systeme/" class="md-nav__link">
+        Les informations système
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-systeme/nettoyage-suites-autos/" class="md-nav__link">
+        Le nettoyage des suites automatisées
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-systeme/parametres-systeme/" class="md-nav__link">
+        Les paramètres système
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-systeme/messages-accueil/" class="md-nav__link">
+        Les messages d’accueil
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-systeme/logs-squash/" class="md-nav__link">
+        Les logs de l’application
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" type="checkbox" id="__nav_3_8" >
+      
+      <label class="md-nav__link" for="__nav_3_8">
+        Configurer l'automatisation des tests
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Configurer l'automatisation des tests" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Configurer l'automatisation des tests
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8_1" type="checkbox" id="__nav_3_8_1" >
+      
+      <label class="md-nav__link" for="__nav_3_8_1">
+        Définir un lien avec un serveur d'exécution automatisée
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Définir un lien avec un serveur d'exécution automatisée" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_8_1">
+          <span class="md-nav__icon md-icon"></span>
+          Définir un lien avec un serveur d'exécution automatisée
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-automatisation-tests/lien-serveur-squash-autom/" class="md-nav__link">
+        Définir un lien avec serveur d'exécution Squash AUTOM
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-automatisation-tests/lien-serveur-squash-tf/" class="md-nav__link">
+        Définir un lien avec serveur d'exécution Squash TF
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-automatisation-tests/serveur-partage-code-source/" class="md-nav__link">
+        Définir un serveur de partage de code source
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-automatisation-tests/parametrer-automatisation-projet/" class="md-nav__link">
+        Paramétrer l’automatisation du projet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admin-guide/gestion-automatisation-tests/nettoyage-suites-autos/" class="md-nav__link">
+        Nettoyage des suites automatisées
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        User Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+      
+      <label class="md-nav__link" for="__nav_4_1">
+        General Introduction
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="General Introduction" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          General Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../squash-workspaces/" class="md-nav__link">
+        Squash TM Workspaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overall-structure/" class="md-nav__link">
+        Pages General Structure
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../library-features/" class="md-nav__link">
+        Multi-Projects Library Features
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Transversal Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Transversal Features
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-les-champs-dun-objet" class="md-nav__link">
+    Modifier les champs d’un objet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-champs-texte-riche" class="md-nav__link">
+    Les champs texte riche
+  </a>
+  
+    <nav class="md-nav" aria-label="Les champs texte riche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inserer-un-tableau" class="md-nav__link">
+    Insérer un tableau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserer-un-lien" class="md-nav__link">
+    Insérer un lien
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserer-une-image" class="md-nav__link">
+    Insérer une image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctionnement-des-tables" class="md-nav__link">
+    Fonctionnement des tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associerdissocier-des-objets" class="md-nav__link">
+    Associer/dissocier des objets
+  </a>
+  
+    <nav class="md-nav" aria-label="Associer/dissocier des objets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#associer-depuis-la-bibliotheque" class="md-nav__link">
+    Associer depuis la bibliothèque
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associer-depuis-la-recherche" class="md-nav__link">
+    Associer depuis la recherche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dissocier-des-objets" class="md-nav__link">
+    Dissocier des objets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajoutersupprimer-une-piece-jointe" class="md-nav__link">
+    Ajouter/Supprimer une pièce jointe
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajouter/Supprimer une pièce jointe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-piece-jointe" class="md-nav__link">
+    Ajouter une pièce jointe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supprimer-une-piece-jointe" class="md-nav__link">
+    Supprimer une pièce jointe
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechercher-un-objet" class="md-nav__link">
+    Rechercher un objet
+  </a>
+  
+    <nav class="md-nav" aria-label="Rechercher un objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-perimetre" class="md-nav__link">
+    Le périmètre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-criteres" class="md-nav__link">
+    Les critères
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-les-attributs" class="md-nav__link">
+    Modifier les attributs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-les-associations-aux-jalons" class="md-nav__link">
+    Modifier les associations aux jalons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter" class="md-nav__link">
+    Exporter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      <label class="md-nav__link" for="__nav_4_2">
+        Gestion des exigences
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des exigences" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des exigences
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/exigences-squash/" class="md-nav__link">
+        Les exigences dans Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/creer-organiser-referentiel-exigences/" class="md-nav__link">
+        Créer et organiser le référentiel d'exigences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/couvrir-exigences-tests/" class="md-nav__link">
+        Couvrir les exigences par des cas de test
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/couverture-validation-exigences/" class="md-nav__link">
+        Suivre la couverture et la validation des exigences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/versionner-exigences/" class="md-nav__link">
+        Versionner les exigences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_6" type="checkbox" id="__nav_4_2_6" >
+      
+      <label class="md-nav__link" for="__nav_4_2_6">
+        Importer/Exporter des exigences
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Importer/Exporter des exigences" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Importer/Exporter des exigences
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/importer-exigences/" class="md-nav__link">
+        Importer des exigences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/exporter-exigences/" class="md-nav__link">
+        Exporter des exigences
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/tableau-bord-exigences/" class="md-nav__link">
+        Tableau de bord des exigences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-exigences/rechercher-exigences/" class="md-nav__link">
+        Rechercher des exigences
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Gestion des cas de test
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des cas de test" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des cas de test
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/cas-test-squash/" class="md-nav__link">
+        Les cas de test dans Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/creer-organiser-patrimoine-cas-test/" class="md-nav__link">
+        Créer et organiser le patrimoine de cas de test
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/associer-cas-test-exigences/" class="md-nav__link">
+        Associer les cas de test aux exigences
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_4" type="checkbox" id="__nav_4_3_4" >
+      
+      <label class="md-nav__link" for="__nav_4_3_4">
+        Gérer le scénario d'un cas de test Classique
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gérer le scénario d'un cas de test Classique" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Gérer le scénario d'un cas de test Classique
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/rediger-scenario-classique/" class="md-nav__link">
+        Rédiger le scénario d'un cas de test Classique
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/variabiliser-modulariser-scenario-classique/" class="md-nav__link">
+        Variabiliser et modulariser un cas de test Classique
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_5" type="checkbox" id="__nav_4_3_5" >
+      
+      <label class="md-nav__link" for="__nav_4_3_5">
+        Gérer le script d'un cas de test BDD
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gérer le script d'un cas de test BDD" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Gérer le script d'un cas de test BDD
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/rediger-script-bdd/" class="md-nav__link">
+        Rédiger le script d'un cas de test BDD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/variabiliser-script-bdd/" class="md-nav__link">
+        Variabiliser un script BDD
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_6" type="checkbox" id="__nav_4_3_6" >
+      
+      <label class="md-nav__link" for="__nav_4_3_6">
+        Gérer le script d'un cas de test Gherkin
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gérer le script d'un cas de test Gherkin" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Gérer le script d'un cas de test Gherkin
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/rediger-script-gherkin/" class="md-nav__link">
+        Rédiger le script d'un cas de test Gherkin
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/variabiliser-script-gherkin/" class="md-nav__link">
+        Variabiliser un script Gherkin
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_7" type="checkbox" id="__nav_4_3_7" >
+      
+      <label class="md-nav__link" for="__nav_4_3_7">
+        Importer/Exporter des cas de test
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Importer/Exporter des cas de test" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Importer/Exporter des cas de test
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/importer-cas-test/" class="md-nav__link">
+        Importer des cas de test
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/exporter-cas-test/" class="md-nav__link">
+        Exporter des cas de test
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/suivre-executions-cas-test/" class="md-nav__link">
+        Suivre les exécutions d'un cas de test
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/tableau-bord-cas-test/" class="md-nav__link">
+        Tableau de bord des cas de test
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-cas-test/rechercher-cas-test/" class="md-nav__link">
+        Rechercher des cas de test
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      <label class="md-nav__link" for="__nav_4_4">
+        Gestion des exécutions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des exécutions" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des exécutions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/objets-campagnes-squash/" class="md-nav__link">
+        Les objets de l'espace Campagnes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/creer-organiser-objets-campagnes/" class="md-nav__link">
+        Créer et organiser les objets de l’espace Campagnes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4_3" type="checkbox" id="__nav_4_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_4_3">
+        Créer et gérer un plan d'exécution
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Créer et gérer un plan d'exécution" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Créer et gérer un plan d'exécution
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/creer-plan-execution/" class="md-nav__link">
+        Créer un plan d'exécution
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/gerer-plan-execution/" class="md-nav__link">
+        Gérer un plan d'exécution
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/executer-manuellement-tests/" class="md-nav__link">
+        Exécuter manuellement les tests
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/exporter-campagne/" class="md-nav__link">
+        Exporter les données d'une campagne
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/tableau-bord-campagnes/" class="md-nav__link">
+        Tableau de bord des campagnes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-executions/rechercher-executions/" class="md-nav__link">
+        Rechercher des exécutions
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      <label class="md-nav__link" for="__nav_4_5">
+        Gestion des anomalies
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des anomalies" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des anomalies
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-anomalies/anomalies-squash/" class="md-nav__link">
+        Les anomalies dans Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-anomalies/declarer-suivre-anomalies/" class="md-nav__link">
+        Déclarer et suivre des anomalies
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      <label class="md-nav__link" for="__nav_4_6">
+        Gestion des tests automatisés
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des tests automatisés" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des tests automatisés
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-tests-automatises/concevoir-tests-automatises/" class="md-nav__link">
+        Concevoir des cas de test automatisés
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6_2" type="checkbox" id="__nav_4_6_2" >
+      
+      <label class="md-nav__link" for="__nav_4_6_2">
+        Suivre le processus d'automatisation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Suivre le processus d'automatisation" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Suivre le processus d'automatisation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-tests-automatises/processus-automatisation-squash/" class="md-nav__link">
+        Workflow d'automatisation Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-tests-automatises/processus-automatisation-jira/" class="md-nav__link">
+        Workflow d’automatisation Jira
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-tests-automatises/associer-script-automatise/" class="md-nav__link">
+        Associer un script automatisé
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-tests-automatises/transmettre-script-scm/" class="md-nav__link">
+        Transmettre un cas de test scripté sur un SCM
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-tests-automatises/executer-test-auto/" class="md-nav__link">
+        Exécuter un cas de test automatisé
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+      
+      <label class="md-nav__link" for="__nav_4_7">
+        Pilotage de la recette
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pilotage de la recette" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          Pilotage de la recette
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pilotage-recette/pilotage-squash/" class="md-nav__link">
+        Le pilotage dans Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pilotage-recette/rapports/" class="md-nav__link">
+        Les rapports
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pilotage-recette/graphiques/" class="md-nav__link">
+        Les graphiques
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pilotage-recette/exports-campagne-perso/" class="md-nav__link">
+        Les exports de campagne personnalisés
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pilotage-recette/tableaux-bord-perso/" class="md-nav__link">
+        Les tableaux de bord personnalisés
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+      
+      <label class="md-nav__link" for="__nav_4_8">
+        Gestion des jalons
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Gestion des jalons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          Gestion des jalons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-jalons/jalons-squash/" class="md-nav__link">
+        Les jalons dans Squash
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-jalons/associer-jalon-objet/" class="md-nav__link">
+        Associer un jalon à un objet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-jalons/mode-jalon/" class="md-nav__link">
+        Le mode jalon
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestion-jalons/jalons-reporting/" class="md-nav__link">
+        Les jalons et le reporting
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Plugins Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Plugins Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Plugins Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/ad-ldap-guide/" class="md-nav__link">
+        LDAP/AD Plugin Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/saml-guide/" class="md-nav__link">
+        SAML Plugin Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/action-word-guide/" class="md-nav__link">
+        Action Word Plugin Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/campaign-wizard-guide/" class="md-nav__link">
+        Exec Plan Wizard Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/xsquash-guide/" class="md-nav__link">
+        Xsquash Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/jira-req-guide/" class="md-nav__link">
+        Jira Requirement Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/redmine-req-guide/" class="md-nav__link">
+        Redmine Requirement Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/polarion-guide/" class="md-nav__link">
+        Polarion Requirement Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../plugin-guides/waj-guide/" class="md-nav__link">
+        Jira Automatisation Workflow Guide
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-les-champs-dun-objet" class="md-nav__link">
+    Modifier les champs d’un objet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-champs-texte-riche" class="md-nav__link">
+    Les champs texte riche
+  </a>
+  
+    <nav class="md-nav" aria-label="Les champs texte riche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inserer-un-tableau" class="md-nav__link">
+    Insérer un tableau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserer-un-lien" class="md-nav__link">
+    Insérer un lien
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserer-une-image" class="md-nav__link">
+    Insérer une image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctionnement-des-tables" class="md-nav__link">
+    Fonctionnement des tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associerdissocier-des-objets" class="md-nav__link">
+    Associer/dissocier des objets
+  </a>
+  
+    <nav class="md-nav" aria-label="Associer/dissocier des objets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#associer-depuis-la-bibliotheque" class="md-nav__link">
+    Associer depuis la bibliothèque
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associer-depuis-la-recherche" class="md-nav__link">
+    Associer depuis la recherche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dissocier-des-objets" class="md-nav__link">
+    Dissocier des objets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajoutersupprimer-une-piece-jointe" class="md-nav__link">
+    Ajouter/Supprimer une pièce jointe
+  </a>
+  
+    <nav class="md-nav" aria-label="Ajouter/Supprimer une pièce jointe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ajouter-une-piece-jointe" class="md-nav__link">
+    Ajouter une pièce jointe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supprimer-une-piece-jointe" class="md-nav__link">
+    Supprimer une pièce jointe
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechercher-un-objet" class="md-nav__link">
+    Rechercher un objet
+  </a>
+  
+    <nav class="md-nav" aria-label="Rechercher un objet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-perimetre" class="md-nav__link">
+    Le périmètre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-criteres" class="md-nav__link">
+    Les critères
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-les-attributs" class="md-nav__link">
+    Modifier les attributs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-les-associations-aux-jalons" class="md-nav__link">
+    Modifier les associations aux jalons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exporter" class="md-nav__link">
+    Exporter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/squash-test/squashtm-doc-en/edit/master/docs/user-guide/general-introduction/object-features.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="fonctionnalites-des-objets">Fonctionnalités des objets</h1>
+<h2 id="modifier-les-champs-dun-objet">Modifier les champs d’un objet</h2>
+<p>Chaque objet de Squash est constitué de divers attributs représentés sous forme de champs de différents types. Au survol de la valeur du champ, un indicateur visuel signale à l'utilisateur qu'elle est modifiable (valeur soulignée, icône crayon ou cadre de couleur).</p>
+<p>Pour modifier un attribut, il suffit de cliquer sur la valeur du champ, de renseigner une nouvelle valeur, puis de valider (bouton <strong>[Confirmer]</strong> ou touche <strong>[Entrée]</strong> du clavier).</p>
+<p>Les différents types de champs présents dans l'application sont les suivants :</p>
+<ul>
+<li>Texte simple : texte sans mise en forme, sur une seule ligne</li>
+<li>Case à cocher</li>
+<li>Date : permet de sélectionner une date dans un calendrier ou de la saisir au format jj/mm/aaaa</li>
+<li>Liste déroulante</li>
+<li>Numérique</li>
+<li>Tag : permet de saisir une ou plusieurs valeurs sous forme d'étiquettes avec de l'autocomplétion</li>
+<li>Texte riche : texte multilignes avec de la mise en forme</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">En savoir plus</p>
+<p>Pour plus de détails sur les champs texte riche, consulter la partie <a href="#les-champs-texte-riche">Les champs texte riche</a></p>
+</div>
+<p><img alt="Modification d'un tag" src="resources/modification-tag.png" /></p>
+<h2 id="les-champs-texte-riche">Les champs texte riche</h2>
+<p>Les champs textes riches peuvent accueillir du texte sur plusieurs lignes et offrent la possibilité de mettre en forme ce texte, d'insérer des tableaux, des images ou des liens.</p>
+<p>La mise en forme de ces champs est conservée dans les exports. Néanmoins, pour que ces fichiers soient générés correctement, il est nécessaire de respecter les règles suivantes pour insérer des éléments dans les champs texte riche. </p>
+<h3 id="inserer-un-tableau">Insérer un tableau</h3>
+<p>Pour insérer un tableau dans un champ texte riche :</p>
+<ol>
+<li>Cliquer sur l'icône <img alt="Tableau" src="resources/tableau1.png" /> présente dans la barre d'icônes du champ texte riche</li>
+<li>Renseigner les propriétés du tableau : nombre de lignes, nombre de colonnes, propriétés avancées</li>
+<li>Cliquer sur <strong>[Ok]</strong></li>
+</ol>
+<p><img alt="Ajouter un tableau" src="resources/action-generique-ajout-tableau.png" />
+<br/><br/></p>
+<p>Le tableau est inséré et prêt à être renseigné.</p>
+<h3 id="inserer-un-lien">Insérer un lien</h3>
+<p>Pour insérer un lien dans un champ texte riche :</p>
+<ol>
+<li>Sélectionner la chaîne de caractère sur laquelle le lien devra être inséré</li>
+<li>Cliquer sur le bouton <img alt="lien" src="resources/lien1.png" /></li>
+<li>Renseigner le lien et ses propriétés : type, mode d'ouverture, infobulle</li>
+<li>Cliquer sur <strong>[OK]</strong></li>
+</ol>
+<p><img alt="Lien" src="resources/champtr-lien-fr.png" />
+<br/><br/></p>
+<p>Il est désormais possible d’accéder au lien via un simple clic sur ce dernier.</p>
+<h3 id="inserer-une-image">Insérer une image</h3>
+<p>Pour insérer une image dans un champ texte riche : </p>
+<ol>
+<li>À partir du mode édition du champ texte riche,  cliquer sur l'icône <img alt="Image" src="resources/image1.png" /></li>
+<li>Renseigner url de l'image et ses propriétés : saisir un texte alternatif, redimensionner l'image, insérer une infobulle au survol de l'image
+<br/><br/>
+<img alt="Propriété de l'image à insérer" src="resources/champtr-propriete-image-fr.png" />
+<br/><br/></li>
+<li>Cliquer sur <strong>[OK]</strong></li>
+</ol>
+<p>L'image s'affiche dans le champ texte riche avec les propriétés définies précédemment.</p>
+<p><img alt="Rendu image insérée" src="resources/champtr-image-inseree-fr.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>Pour ajouter une image stockée localement, réaliser au préalable les étapes suivantes avant de procéder à l'insertion de l'image dans le champ texte : </p>
+<ol>
+<li>À partir de la page de consultation de l'élément, ajouter l'image en pièce jointe via la fonctionnalité accessible par l'icone <img alt="Icone PJ" src="resources/attachments.png" /></li>
+<li>Récupérer l'url par clic droit sur le nom de l'image puis copier l'adresse du lien</li>
+</ol>
+</div>
+<h2 id="fonctionnement-des-tables">Fonctionnement des tables</h2>
+<p>Les associations entre objets (Exigences-Exigences, Exigences-Cas de test, Plan d'exécution-Cas de test) sont formalisées dans des tables à partir desquelles il est possible, selon l'habilitation de l'utilisateur :</p>
+<ul>
+<li>d'ajouter une association</li>
+<li>de rechercher un ou plusieurs objets et associer la sélection</li>
+<li>de supprimer une association </li>
+<li>de supprimer une sélection d'associations</li>
+<li>d'accéder via un lien à la page de niveau 2 de l'élément dans la table</li>
+</ul>
+<p>Par défaut, un tri est appliqué aux tables et il est possible, en cliquant sur l'en-tête de la colonne de modifier ce tri : la flèche orientée vers le haut indique un tri alphabétique ou chronologique, la flèche orientée vers le bas indique un tri alphabétique inverse ou anté-chronologique.</p>
+<p><img alt="Table d'association" src="resources/table-fr.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>La table d'un plan d'exécution peut également être filtrée en saisissant du texte ou en sélectionnant une valeur après avoir cliqué sur l'icone de filtre. </p>
+</div>
+<h2 id="associerdissocier-des-objets">Associer/dissocier des objets</h2>
+<p>Squash permet de lier des objets entre eux : deux exigences entre elles, une exigence à un cas de test ou un cas de test à un plan d'exécution.</p>
+<h3 id="associer-depuis-la-bibliotheque">Associer depuis la bibliothèque</h3>
+<p>Depuis la page de consultation d'une exigence, il est possible, par glisser/déposer d'une exigence depuis la bibliothèque, de l'associer à l'exigence consultée. Elles apparaissent alors toutes deux, respectivement dans leur table <strong>Exigences liées</strong>.</p>
+<p><img alt="Associer depuis la bibliothèque" src="resources/associer-bibliotheque-fr.png" /></p>
+<h3 id="associer-depuis-la-recherche">Associer depuis la recherche</h3>
+<p>À partir d'une table d'association, <strong>Cas de test vérifiant cette exigence</strong>, <strong>Exigences vérifiées par ce cas de test</strong> ou un <strong>Plan d'exécution</strong>, le bouton <img alt="Rechercher" src="resources/browse.png" /> permet d'accéder à la recherche des objets: tout ou partie des résultats peut alors être associé.</p>
+<p><img alt="Associer la recherche" src="resources/associer-recherche-fr.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>Depuis un <strong>Plan d'exécution</strong>, il est possible d'accéder à la recherche directe de cas de test ou d'accéder à la recherche d'exigences dont les résultats sont les cas de tests associés aux exigences respectant les critères de recherche.</p>
+</div>
+<h3 id="dissocier-des-objets">Dissocier des objets</h3>
+<p>Dans les différentes tables de Squash, il est possible de supprimer une association via le bouton présent en bout de ligne pour une dissociation simple ou via le bouton présent au dessus de la table lors d'une sélection multiple.</p>
+<p><img alt="Supprimer des associations" src="resources/dissociation-fr.png" /></p>
+<h2 id="ajoutersupprimer-une-piece-jointe">Ajouter/Supprimer une pièce jointe</h2>
+<h3 id="ajouter-une-piece-jointe">Ajouter une pièce jointe</h3>
+<p>Sur la page de consultation d'un objet (dossier, exigences, cas de test, pas de test, campagne, itération ou suite), il est possible d'ajouter des pièces jointes via l'icone <img alt="icone pièce-jointe" src="resources/attachments.png" />.
+L'ajout se fait par glisser déposer dans l'encart dédié ou en parcourant les répertoires locaux.</p>
+<p><img alt="Ajout de pièce jointe" src="resources/ajout-pj.png" /></p>
+<p>Ce volet permet de consulter les informations des pièces jointes (nom, taille et date d'ajout) et de les télécharger.</p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>Par défaut, les types de fichier acceptés sont : txt, doc, xls, ppt, docx, xlsx, pptx, odt, ods, odp, pdf. La liste est modifiable par un Administrateur pour ajouter ou supprimer des extensions.
+Par défaut, la taille maximale d'une pièce jointe est de 4000000 bytes. Elle aussi peut être ajustée par un Administrateur.</p>
+</div>
+<h3 id="supprimer-une-piece-jointe">Supprimer une pièce jointe</h3>
+<p>À partir du volet des pièces jointes, la suppression des pièces jointes est possible via le bouton <strong>[Poubelle]</strong> présent en bout de ligne.</p>
+<p><img alt="Suppression d'une pièce jointe" src="resources/suppression-pj.png" /></p>
+<h2 id="rechercher-un-objet">Rechercher un objet</h2>
+<p>Au clic sur le bouton [Rechercher] <img alt="icone Rechercher" src="resources/browse.png" /> présent au-dessus des bibliothèques Exigences, Cas de test et Campagnes, la page de recherche propre à chaque espace s'ouvre. Par défaut, le périmètre de recherche est celui du filtre projet.
+Le volet sur la gauche de la page des résultats de recherche permet de définir un périmètre de recherche et d'ajouter des critères de recherches propres aux objets de l'espace.</p>
+<h3 id="le-perimetre">Le périmètre</h3>
+<p>Depuis le critère Périmètre et l'onglet Projet, il est possible de sélectionner ou désélectionner par case à cocher le ou les projets à inclure ou exclure du périmètre.</p>
+<p><img alt="Rechercher un objet - Périmètre projet" src="resources/rechercher-perimetre-projet-fr.png" /></p>
+<p>L'onglet Personnalisé permet de sélectionner un ou plusieurs répertoires ou des éléments pour définir le périmètre de recherche.</p>
+<p><img alt="Rechercher un objet - Périmètre personnalisé" src="resources/rechercher-perimetre-perso-fr.png" /></p>
+<h3 id="les-criteres">Les critères</h3>
+<p>L'ajout de critères de recherche se fait par simple sélection des attributs disponibles pour l'entité de l'espace à partir du bouton <strong>[Ajouter des critères]</strong>. La liste de résultat se met automatiquement à jour à la sélection d'un critère.</p>
+<p><img alt="Rechercher un objet - Ajouter un critère" src="resources/rechercher-ajouter-un-critere-fr.png" /> </p>
+<p>Le clic sur le bouton <strong>[Nouvelle recherche]</strong> réinitialise les critères de recherche.</p>
+<h3 id="modifier-les-attributs">Modifier les attributs</h3>
+<p>À partir d'une sélection simple ou multiple dans la table de résultats, il est possible de modifier en masse certains attributs :</p>
+<ul>
+<li>le statut, la criticité ou la catégorie de la version d'une exigence</li>
+<li>l'importance, le statut, le type, la nature ou l'éligibilité à l'automatisation d'un cas de test</li>
+<li>le statut d'exécution d'un test associé à un plan d'itération</li>
+</ul>
+<p><img alt="Rechercher un objet - Modifier en masse" src="resources/rechercher-modif-masse-fr.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Info</p>
+<p>Il est possible via cette fonctionnalité d'appliquer le statut Approuvée à une version d'exigence depuis n'importe quel autre statut.</p>
+</div>
+<h3 id="modifier-les-associations-aux-jalons">Modifier les associations aux jalons</h3>
+<p>À partir d'une sélection simple ou multiple dans la table de résultats, il est possible d'associer en masse la sélection à un jalon à condition que le jalon soit déjà associé au projet auxquels appartiennent les objets sélectionnés.</p>
+<p><img alt="Rechercher un objet - association en masse à un jalon" src="resources/rechercher-asso-masse-fr.png" /></p>
+<h3 id="exporter">Exporter</h3>
+<p>À partir du bouton <strong>[Exporter]</strong>, il est possible d'exporter vers un tableur tout ou sélection du résultat de recherche.
+Diverses options sont alors disponibles : </p>
+<ul>
+<li>le format XLS 'Champs actuels' : cet export permet de récupérer les données des exigence ou des cas de test sous la forme d'un classeur Excel n'ayant que les informations affichées dans les résultats de recherche;</li>
+<li>le format XLS 'Tous les champs' : cet export permet de récupérer l'intégralité des données des exigences des cas de test sous la forme d'un classeur Excel.</li>
+<li>conserver le format des textes riches : les champs de type "texte riche" seront exportés avec leur balises HTML afin de conserver la mise en forme lors d'un futur import. Ne pas conserver le format facilite la lecture de ces champs dans l'export</li>
+<li>inclure ou non les cas de test appelés (pour l'espace Cas de test uniquement)</li>
+</ul>
+<p><img alt="Rechercher un objet - exporter les résultats" src="resources/rechercher-exporter-fr.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">En savoir plus</p>
+<p>Les résultats de recherche de l'espace Campagne ne sont pas exportables mais il est possible d'<a href="../../gestion-executions/creer-plan-execution/#identifier-les-tests-a-rejouer-selon-les-resultats-dexecution-precedents">ajouter tout ou sélection des résultats à un plan d'exécution d'une itération</a>.</p>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../library-features/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Multi-Projects Library Features
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../gestion-exigences/exigences-squash/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Les exigences dans Squash
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 - 2021 Henix
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.34eae1b6.min.js"></script>
+      
+    
+  </body>
+</html>
