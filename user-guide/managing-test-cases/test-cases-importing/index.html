@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#renseigner-un-fichier-dimport-de-cas-de-test" class="md-skip">
+        <a href="#filling-in-a-test-case-import-file" class="md-skip">
           Skip to content
         </a>
       
@@ -1602,44 +1602,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#renseigner-un-fichier-dimport-de-cas-de-test" class="md-nav__link">
-    Renseigner un fichier d’import de cas de test
+  <a href="#filling-in-a-test-case-import-file" class="md-nav__link">
+    Filling in a Test Case Import File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#structure-du-fichier-dimport-au-format-excel" class="md-nav__link">
-    Structure du fichier d'import au format Excel
+  <a href="#excel-import-file-structure" class="md-nav__link">
+    Excel Import File Structure
   </a>
   
-    <nav class="md-nav" aria-label="Structure du fichier d'import au format Excel">
+    <nav class="md-nav" aria-label="Excel Import File Structure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#onglet-test_cases" class="md-nav__link">
-    Onglet TEST_CASES
+  <a href="#test_cases-tab" class="md-nav__link">
+    TEST_CASES Tab
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#onglet-steps" class="md-nav__link">
-    Onglet STEPS
+  <a href="#steps-tab" class="md-nav__link">
+    STEPS Tab
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#onglet-parameters" class="md-nav__link">
-    Onglet PARAMETERS
+  <a href="#parameters-tab" class="md-nav__link">
+    PARAMETERS Tab
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#onglet-datasets" class="md-nav__link">
-    Onglet DATASETS
+  <a href="#datasets-tab" class="md-nav__link">
+    DATASETS Tab
   </a>
   
 </li>
@@ -2457,44 +2457,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#renseigner-un-fichier-dimport-de-cas-de-test" class="md-nav__link">
-    Renseigner un fichier d’import de cas de test
+  <a href="#filling-in-a-test-case-import-file" class="md-nav__link">
+    Filling in a Test Case Import File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#structure-du-fichier-dimport-au-format-excel" class="md-nav__link">
-    Structure du fichier d'import au format Excel
+  <a href="#excel-import-file-structure" class="md-nav__link">
+    Excel Import File Structure
   </a>
   
-    <nav class="md-nav" aria-label="Structure du fichier d'import au format Excel">
+    <nav class="md-nav" aria-label="Excel Import File Structure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#onglet-test_cases" class="md-nav__link">
-    Onglet TEST_CASES
+  <a href="#test_cases-tab" class="md-nav__link">
+    TEST_CASES Tab
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#onglet-steps" class="md-nav__link">
-    Onglet STEPS
+  <a href="#steps-tab" class="md-nav__link">
+    STEPS Tab
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#onglet-parameters" class="md-nav__link">
-    Onglet PARAMETERS
+  <a href="#parameters-tab" class="md-nav__link">
+    PARAMETERS Tab
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#onglet-datasets" class="md-nav__link">
-    Onglet DATASETS
+  <a href="#datasets-tab" class="md-nav__link">
+    DATASETS Tab
   </a>
   
 </li>
@@ -2610,277 +2610,277 @@
                   </a>
                 
                 
-                <h1 id="importer-des-cas-de-test">Importer des cas de test</h1>
-<h2 id="renseigner-un-fichier-dimport-de-cas-de-test">Renseigner un fichier d’import de cas de test</h2>
-<p>L'import de cas de test via un fichier Excel permet de créer ou modifier un patrimoine de tests <strong>en masse</strong>. Il est possible d'importer des cas de test, leurs attributs, leurs paramètres et jeux de données ainsi que leur associations à des exigences.</p>
-<p>Cette fonctionnalité est très utile :</p>
+                <h1 id="importing-test-cases">Importing Test Cases</h1>
+<h2 id="filling-in-a-test-case-import-file">Filling in a Test Case Import File</h2>
+<p>Importing test cases via an Excel file allows you to <strong>mass</strong> create or <strong>mass</strong> modify a portfolio of tests. You can import test cases, their attributes, settings, and datasets, as well as their links to requirements.</p>
+<p>This feature is very useful:</p>
 <ul>
-<li>lors d'une <strong>migration</strong> depuis un outil tiers</li>
-<li>pour récupérer un patrimoine de tests existant dans un document</li>
-<li>pour effectuer des modifications en masse sur les cas de test présents dans Squash</li>
+<li>during a <strong>migration</strong> from a third-party tool; </li>
+<li>to retrieve a portfolio a tests from a document;</li>
+<li>to mass modify test cases already in Squash TM.</li>
 </ul>
-<p>L'import de cas de test se fait depuis des fichiers au format <strong>.xls</strong>, <strong>.xlsx</strong>, <strong>.xlsm</strong> ou un dossier <strong>Zip</strong>.</p>
+<p>You can import test cases from <strong>.xls</strong>, <strong>.xlsx</strong>, <strong>.xlsm</strong>, and <strong>Zip</strong> files.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>L'import est réservé aux profils "Administrateur" et "Chef de projet".
-<br/>Un gabarit d'import pour les formats Excel ou Zip est téléchargeable depuis la popup d'import dans l'espace Cas de test.</p>
+<p>The import feature is only available for "Admin" and "Project Leader" profiles.
+<br/>You can download an import template for Excel and .Zip files from the import pop-up in the Test Cases workspace.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
-<p>Il n'est pas possible d'importer des cas de test BDD
-<br/>Il n'est pas possible de modifier le format d'un cas de test (Classique/Gherkin/BDD) via l’import</p>
+<p>You cannot import BDD test cases. 
+<br/>You cannot modify a test case format (Classic/Gherkin/BDD) through importing.</p>
 </div>
-<h2 id="structure-du-fichier-dimport-au-format-excel">Structure du fichier d'import au format Excel</h2>
-<p>Le fichier d'import comprend cinq onglets :   </p>
+<h2 id="excel-import-file-structure">Excel Import File Structure</h2>
+<p>The import file is composed of five tabs:   </p>
 <ul>
-<li>L'onglet TEST_CASES renseigne les informations liées aux cas de test à importer comme l'emplacement, la description, l'importance, etc.  </li>
-<li>L'onglet STEPS renseigne les informations sur les pas de test d'un cas de test classique</li>
-<li>L’onglet PARAMETERS renseigne les informations liées aux paramètres d'un cas de test</li>
-<li>L’onglet DATASETS renseigne les informations liées aux jeux de données</li>
-<li>L'onglet LINK_REQ_TC renseigne les informations pour associer les cas de test aux exigences déjà présentes dans Squash.</li>
+<li>The TEST_CASES tab contains information related to the test cases to import such location, description, importance, etc.;</li>
+<li>The STEPS tab contains information related to a classic test case's test steps.;</li>
+<li>The PARAMETERS tab contains information related to a test case's settings; </li>
+<li>The DATASETS tab contains information related to datasets; </li>
+<li>The LINK_REQ_TC tab contains information to link test cases to requirements already in Squash TM.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
-<p>Le fichier d'import doit respecter les règles ci-dessous :</p>
+<p>The import file must follow these rules:</p>
 <ul>
-<li>Les noms des 5 onglets ne doivent pas être modifiés.</li>
-<li>Les entêtes des colonnes ne doivent pas être modifiées.  </li>
-<li>Les lignes vides ne sont pas interprétées.   </li>
-<li>Les cellules ne doivent pas être fusionnées.</li>
-<li>L'ordre des lignes n'a pas d'importance. </li>
-<li>L'import se fait ligne par ligne.</li>
+<li>The name of the 5 tabs must not be changed;</li>
+<li>The headings of columns must not be changed;</li>
+<li>The blank rows must not be interpreted;</li>
+<li>The cells must not be merged;</li>
+<li>The order of the rows does not matter;</li>
+<li>The import is done row by row.</li>
 </ul>
 </div>
-<h3 id="onglet-test_cases">Onglet TEST_CASES</h3>
+<h3 id="test_cases-tab">TEST_CASES Tab</h3>
 <table>
 <thead>
 <tr>
-<th>Nom de la colonne</th>
+<th>Column name</th>
 <th>Description</th>
-<th>Valeur attendue</th>
+<th>Expected value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ACTION</td>
-<td>Valeur qui indique l'action à effectuer.</td>
-<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td>Value that indicates the action that you want to do.</td>
+<td><u>Required Field</u> <br/>C: to create (<strong>Create</strong>)  <br/>U: to update (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_PATH</td>
-<td>Chemin du cas de test. Il commence par "/nom du projet" et se termine par le nom du cas de test. Il inclut le nom du projet car l'import est multi-projet</td>
-<td><u>Champ Obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td>Test case path. It starts with "/project name" and ends with the test case. It includes the name of the project because the import is cross-project.</td>
+<td><u>Mandatory Field</u> <br/>For example:  <br/>- /project/folder/testcase</td>
 </tr>
 <tr>
 <td>TC_NUM</td>
-<td>Ordre du cas de test dans son dossier conteneur. <br/><br/>- Mode <strong>CREATE</strong> : si non renseigné, considéré comme le dernier élément du conteneur. Si renseigné, le cas de test est donc créé à cette position. <br/>- Mode <strong>UPDATE</strong> : si non renseigné l'information est ignorée. Si le numéro d'ordre renseigné est différent de l'ordre actuel le cas de test est déplacé à cette nouvelle position.</td>
+<td>Test case position in its folder. <br/><br/>- <strong>CREATE</strong> Mode: if not entered, will be considered as the last item of the folder. If entered, the case test is created at that position. <br/>- <strong>UPDATE</strong> Mode: if not entered, information is ignored. If you enter a position number that is different from the current order, the test case is moved to that different position.</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_UUID</td>
-<td>Identifiant universel unique du cas de test. <br/><br/>- Mode <strong>CREATE</strong> : si renseigné, le cas de test est créé avec cet UUID. Si non renseigné, le cas de test est créé avec un UUID généré automatiquement. <br/>- Mode <strong>UPDATE</strong> : la valeur de la colonne TC_UUID n'est pas considérée. Il n'est pas possible de modifier l'UUID d'un cas de test déjà existant dans la base de données.</td>
-<td>Si renseignée, la valeur de la colonne TC_UUID doit correspondre à l'expression régulière :<br/> [0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}</td>
+<td>Test case unique universal ID <br/><br/>- Mode <strong>CREATE</strong> : if entered, the test case is created under this UUID. If not entered, the test case is created with an auto-generated UUID. <br/>- <strong>UPDATE</strong> Mode: the value of the TC_UUID is not considered. You cannot modify a case test's UUID when it is already in the database .</td>
+<td>If entered, the value of the TC_UUID column must match the regular expression:<br/> [0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}</td>
 </tr>
 <tr>
 <td>TC_REFERENCE</td>
-<td>Référence du cas de test</td>
+<td>Test case reference</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_NAME</td>
-<td>Nom du cas de test. <br/>- Mode <strong>CREATE</strong>: le champ est ignoré <br/>- Mode <strong>UPDATE</strong> : permet de renommer un cas de test</td>
+<td>Test case name. <br/>- <strong>CREATE</strong> Mode: the field is ignored. <br/>- <strong>UPDATE</strong> Mode: allows you to rename a test case</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_MILESTONE</td>
-<td>Intitulé du ou des jalons associés au cas de test. Si un objet est associé à plusieurs jalons, chacun des jalons doit être renseigné dans la colonne correspondante séparé par un "|". <br/>Mode <strong>UPDATE</strong> : si la colonne est vide, les associations existantes sont supprimées.</td>
-<td>Par exemple si un cas de test est associé à deux jalons :  <br/>Jalon1|Jalon 2</td>
+<td>Name of the milestone(s) related to the test case. If an object is linked to several milestones, each of the milestone must be entered in the matching column, separated with a "|". <br/><strong>UPDATE</strong> Mode: if the column is blank, the existing links will be deleted.</td>
+<td>For example, if a test case is related to two milestones:  <br/>Milestone1|Milestone 2</td>
 </tr>
 <tr>
 <td>TC_WEIGHT_AUTO</td>
-<td>Si, à l’import, la valeur est à "1" Squash déduit l’importance du cas de test en fonction des exigences qui lui sont associées y compris celles associées aux cas de test appelés. <br/>Si la colonne ou la valeur est omise, la valeur par défaut prise en compte est "0" .</td>
-<td>- "1" : Si le calcul de l’importance est automatique <br/>- "0" : Si la valorisation de l’importance est manuelle.</td>
+<td>If, during the import, the value is at "1", Squash TM deduces the weight of the test case according to its related requirements, including the requirements linked to called test case<br/>If the column or the value is not entered, the default value taken into account is "0".</td>
+<td>- "1" : If the weight calculation is automatic <br/>- "0" : If the weight value is manually entered.</td>
 </tr>
 <tr>
 <td>TC_WEIGHT</td>
-<td>Code de l’importance du cas de test. <br/> Si TC_WEIGHT_AUTO = 1, la valeur indiquée pour TC_WEIGHT est ignorée.</td>
-<td>- VERY_HIGH (Très haute)<br/>- HIGH (Haute)<br/>- MEDIUM (Moyenne)<br/>- LOW (Faible) [Valeur par défaut]</td>
+<td>Test case weight code. <br/> If TC_WEIGHT_AUTO = 1, the indicated value for TC_WEIGHT is ignored.</td>
+<td>- VERY_HIGH<br/>- HIGH<br/>- MEDIUM<br/>- LOW [Default value]</td>
 </tr>
 <tr>
 <td>TC_NATURE</td>
-<td>Code de la nature du cas de test</td>
-<td>- NAT_ATDD (ATDD) <br/>- NAT_BUSINESS_TESTING (Métier)<br/>- NAT_FUNCTIONAL_TESTING (Fonctionnelle)<br/>- NAT_NON_FUNCTIONAL_TESTING (Non fonctionnelle)<br/>- NAT_PERFORMANCE_TESTING (Performance) <br/>- NAT_SECURITY_TESTING (Sécurité)<br/>- NAT_UNDEFINED (Non définie) [Valeur par défaut]<br/>- NAT_USER_TESTING (Utilisateur)</td>
+<td>Test case nature code</td>
+<td>- NAT_ATDD <br/>- NAT_BUSINESS_TESTING<br/>- NAT_FUNCTIONAL_TESTING<br/>- NAT_NON_FUNCTIONAL_TESTING<br/>- NAT_PERFORMANCE_TESTING<br/>- NAT_SECURITY_TESTING<br/>- NAT_UNDEFINED [Default value]<br/>- NAT_USER_TESTING</td>
 </tr>
 <tr>
 <td>TC_TYPE</td>
-<td>Code du type de cas de test</td>
-<td>- TYP_COMPLIANCE_TESTING (Recevabilité)<br/>- TYP_CORRECTION_TESTING (Correctif)<br/>- TYP_END_TO_END_TESTING (Bout-en-bout)<br/>- TYP_EVOLUTION_TESTING (Évolution) <br/>- TYP_PARTNER_TESTING (Partenaire)<br/>- TYP_REGRESSION_TESTING (Non-régression)<br/>- TYP_UNDEFINED (Non définie) [Valeur par défaut]</td>
+<td>Test case type code</td>
+<td>- TYP_COMPLIANCE_TESTING <br/>- TYP_CORRECTION_TESTING <br/>- TYP_END_TO_END_TESTING <br/>- TYP_EVOLUTION_TESTING <br/>- TYP_PARTNER_TESTING <br/>- TYP_REGRESSION_TESTING <br/>- TYP_UNDEFINED [Default value]</td>
 </tr>
 <tr>
 <td>TC_STATUS</td>
-<td>Code du statut de rédaction du cas de test</td>
-<td>- APPROVED (Approuvé)<br/>- OBSOLETE (Obsolète)<br/>- TO_BE_UPDATED (À mettre à jour)<br/>- UNDER_REVIEW (À approuver)<br/>- WORK_IN_PROGRESS (En cours de rédaction) [Valeur par défaut]</td>
+<td>Test case status code</td>
+<td>- APPROVED<br/>- OBSOLETE<br/>- TO_BE_UPDATED<br/>- UNDER_REVIEW<br/>- WORK_IN_PROGRESS [Default value]</td>
 </tr>
 <tr>
 <td>TC_DESCRIPTION</td>
-<td>Description du cas de test</td>
+<td>Test case description</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_PRE_REQUISITE</td>
-<td>Prérequis du cas de test</td>
+<td>Test case prerequisite</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_CREATED_ON</td>
-<td>Date de création du cas de test. Les dates sont exportées dans des cellules de type date ou de type texte au format ISO 8601</td>
-<td>Format : YYYY-MM-DD <br/>Si elle n’est pas renseignée, la date courante est utilisée.</td>
+<td>Test case creation date. Dates are exported in date cells or cells in ISO 8601 format.</td>
+<td>Format: YYYY-MM-DD <br/>If the date is not entered, the current date is used.</td>
 </tr>
 <tr>
 <td>TC_CREATED_BY</td>
-<td>Login du créateur.</td>
-<td>Si non renseigné, c'est le login de l’utilisateur réalisant l'import qui est utilisé.</td>
+<td>Creator login.</td>
+<td>If not entered, the login of the user who did the import is used.</td>
 </tr>
 <tr>
 <td><em>TC_LAST_MODIFIED_ON</em></td>
-<td><em>Date de dernière modification du cas de test</em></td>
-<td><em>Colonne ignorée si présente dans le fichier d’import</em></td>
+<td><em>Test case last modification date</em></td>
+<td><em>Column ignored if already in import file</em></td>
 </tr>
 <tr>
 <td><em>TC_LAST_MODIFIED_BY</em></td>
-<td><em>Login du dernier modificateur.</em></td>
-<td><em>Colonne ignorée si présente dans le fichier d’import</em></td>
+<td><em>Login of the user who last modified the case test</em></td>
+<td><em>Column ignored if already in import file</em></td>
 </tr>
 <tr>
 <td>TC_KIND</td>
-<td>Code du format du cas de test. <br/>Si non renseigné, le cas de test est importé comme un cas de test classique.</td>
-<td>Format :<br/>- STANDARD (Classique)<br/>- GHERKIN<br/>- KEYWORD (BDD)</td>
+<td>Test case format code <br/>If not entered, the test case is imported as a standard test case.</td>
+<td>Format :<br/>- STANDARD <br/>- GHERKIN<br/>- KEYWORD (BDD)</td>
 </tr>
 <tr>
 <td>TC_SCRIPT</td>
-<td>Script Gherkin du cas de test</td>
+<td>Test case Gherkin script</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_AUTOMATABLE</td>
-<td>Eligibilité à l’automatisation du cas de test</td>
-<td>- M : À instruire [Valeur par défaut]<br/>- Y : Eligible<br/>- N : Non éligible</td>
+<td>Eligibility to the automation of the test case</td>
+<td>- M : To instruct [Valeur par défaut]<br/>- Y : Eligible<br/>- N : Non eligible</td>
 </tr>
 <tr>
 <td>TC_CUF_&lt;cuf's code></td>
-<td>Une colonne par champ personnalisé.  <br/>Dans l'en-tête, remplacer &lt;cuf's code> par le code du champ personnalisé.</td>
-<td>Valeur associée au champ personnalisé</td>
+<td>One column by custom field.  <br/>In the heading, replace &lt;cuf's code> by the custom field's code.</td>
+<td>Value linked to the custom field</td>
 </tr>
 </tbody>
 </table>
-<h3 id="onglet-steps">Onglet STEPS</h3>
+<h3 id="steps-tab">STEPS Tab</h3>
 <table>
 <thead>
 <tr>
-<th>Nom de la colonne</th>
+<th>Column name</th>
 <th>Description</th>
-<th>Valeur attendue</th>
+<th>Expected value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ACTION</td>
-<td>Valeur qui indique l'action à effectuer.</td>
-<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td>Value which indicates the action to do.</td>
+<td><u>Mandatory field</u> <br/>C: to create (<strong>Create</strong>)  <br/>U : to update (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_OWNER_PATH</td>
-<td>Chemin vers le cas de test propriétaire du pas de test.</td>
-<td><u>Champ obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td>Path to the owner test case of the test step.</td>
+<td><u>Mandatory field</u> <br/>For example :  <br/>- /project/folder/testcase</td>
 </tr>
 <tr>
 <td>TC_STEP_NUM</td>
-<td>Numéro d’ordre de l’étape de test (commence à 1) <br/>Pour l’import, les numéros peuvent ne pas se suivre : on prend l’ordre relatif entre les différents TC_STEP_NUM. <br/>L'ordre d'apparition dans le fichier est pris en compte si deux pas de test ont le même numéro d’ordre, ou si la valeur est absente</td>
+<td>Position number of the test step (starts at 1) <br/>For the import, the numbers do not have to: the relative order between the different TC_STEP_NUM is used. <br/>If two test steps have the same position number or if there is no value, the order of apparition in the file is used.</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_STEP_IS_CALL_STEP</td>
-<td>Permet d'indiquer que ce pas de test est soit une action soit un cas de test appelé</td>
-<td>- "0" si l’étape est un pas de test [Valeur par défaut]<br/>- "1" si l’étape est un cas de test appelé</td>
+<td>To indicate whether this test step is an action or a called test case.</td>
+<td>- "0" if the step is a test step [Default value]<br/>- "1" if the step is a called test case</td>
 </tr>
 <tr>
 <td>TC_STEP_CALL_DATASET</td>
-<td>La colonne n’est prise en compte que si TC_STEP_IS_CALL_STEP = "1"</td>
-<td>- "INHERIT" si l’option choisie est de ne pas choisir de jeu de données, le cas de test appelant hérite des paramètres du cas de test appelé <br/>- &lt;NAME> : donne le nom du jeu de données choisi.</td>
+<td>This column is only taken into account if TC_STEP_IS_CALL_STEP = "1"</td>
+<td>- "INHERIT" if the chosen option is to not choose a dataset, the calling test case inherits the settings of the called test case <br/>- &lt;NAME> : names the chosen dataset</td>
 </tr>
 <tr>
 <td>TC_STEP_ACTION</td>
-<td>- Action de l’étape <br/>- Ou chemin vers le cas de test appelé</td>
-<td>Par exemple, dans le cas d’un appel de cas de test : <br/>CALL /projet/dossier/nom_du_CT_appelé</td>
+<td>- Step action <br/>- Or path towards the called test case</td>
+<td>For example, for a test case call: <br/>CALL /project/folder/called_TC_name</td>
 </tr>
 <tr>
 <td>TC_STEP_EXPECTED_RESULT</td>
-<td>- Résultat attendu de l’étape<br/>- Si STEP_IS_CALL_STEP = 1, cette colonne est ignorée</td>
+<td>- Step expected result<br/>- If STEP_IS_CALL_STEP = 1, this column is ignored</td>
 <td></td>
 </tr>
 <tr>
 <td>TC_STEP_CUF &lt;cuf's code></td>
-<td>Une colonne par champ personnalisé. Dans l'en-tête, remplacer &lt;cuf's code> par le code du champ personnalisé du pas de test.</td>
-<td>Valeur associée au champ personnalisé</td>
+<td>One column per custom field. In the heading, replace &lt;cuf's code> by the test step's custom field code.</td>
+<td>Value linked to custom field</td>
 </tr>
 </tbody>
 </table>
-<h3 id="onglet-parameters">Onglet PARAMETERS</h3>
+<h3 id="parameters-tab">PARAMETERS Tab</h3>
 <table>
 <thead>
 <tr>
-<th>Nom de la colonne</th>
+<th>Column name</th>
 <th>Description</th>
-<th>Valeur attendue</th>
+<th>Expected value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ACTION</td>
-<td>Valeur qui indique l'action à effectuer.</td>
-<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td>Value that indicates the action to do.</td>
+<td><u>Mandatory field</u> <br/>C: to create (<strong>Create</strong>)  <br/>U: to update (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_OWNER_PATH</td>
-<td>Chemin vers le cas de test propriétaire du paramètre</td>
-<td><u>Champ obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td>Path towards the owner test case of the parameter</td>
+<td><u>Mandatory field</u> <br/>For example:  <br/>- /project/folder/testcase</td>
 </tr>
 <tr>
 <td>TC_PARAM_NAME</td>
-<td>Nom du paramètre, doit contenir uniquement les caractères suivants : [0-9], [a-z], [A-Z] et [-,_].</td>
-<td><u>Champ obligatoire</u></td>
+<td>Parameter name, must only contain the following characters: [0-9], [a-z], [A-Z] et [-,_].</td>
+<td><u>Mandatory field</u></td>
 </tr>
 <tr>
 <td>TC_PARAM_DESCRIPTION</td>
-<td>Description du paramètre</td>
+<td>Parameter description</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h3 id="onglet-datasets">Onglet DATASETS</h3>
+<h3 id="datasets-tab">DATASETS Tab</h3>
 <table>
 <thead>
 <tr>
-<th>Nom de la colonne</th>
+<th>Column name</th>
 <th>Description</th>
-<th>Valeur attendue</th>
+<th>Expected value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ACTION</td>
-<td>Valeur qui indique l'action à effectuer.</td>
-<td><u>Champ Obligatoire</u> <br/>C : pour la création (<strong>Create</strong>)  <br/>U : pour la mise à jour (<strong>Update</strong>)</td>
+<td>Value that indicates the action to do.</td>
+<td><u>Mandatory field</u> <br/>C: to create (<strong>Create</strong>)  <br/>U : to update (<strong>Update</strong>)</td>
 </tr>
 <tr>
 <td>TC_OWNER_PATH</td>
-<td>Chemin vers le cas de test propriétaire du jeu de données.</td>
-<td><u>Champ obligatoire</u> <br/>Par exemple :  <br/>- /projet/dossier/casdetest</td>
+<td>Path to the owner test case of the dataset.</td>
+<td><u>Mandatory field</u> <br/>For example :  <br/>- /project/folder/testcase</td>
 </tr>
 <tr>
 <td>TC_DATASET_NAME</td>
-<td>Nom du jeu de données.</td>
-<td><u>Champ obligatoire</u></td>
+<td>Dataset name</td>
+<td><u>Mandatory field</u></td>
 </tr>
 <tr>
 <td>TC_PARAM_OWNER_PATH</td>

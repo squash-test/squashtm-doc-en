@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exporter-des-exigences-depuis-la-bibliotheque" class="md-skip">
+        <a href="#exporting-requirements-from-the-library" class="md-skip">
           Skip to content
         </a>
       
@@ -1323,15 +1323,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exporter-des-exigences-depuis-la-bibliotheque" class="md-nav__link">
-    Exporter des exigences depuis la bibliothèque
+  <a href="#exporting-requirements-from-the-library" class="md-nav__link">
+    Exporting requirements from the library
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importer-des-exigences-a-partir-dun-export" class="md-nav__link">
-    Importer des exigences à partir d’un export
+  <a href="#importing-requirements-from-an-export" class="md-nav__link">
+    Importing requirements from an export
   </a>
   
 </li>
@@ -2340,15 +2340,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exporter-des-exigences-depuis-la-bibliotheque" class="md-nav__link">
-    Exporter des exigences depuis la bibliothèque
+  <a href="#exporting-requirements-from-the-library" class="md-nav__link">
+    Exporting requirements from the library
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importer-des-exigences-a-partir-dun-export" class="md-nav__link">
-    Importer des exigences à partir d’un export
+  <a href="#importing-requirements-from-an-export" class="md-nav__link">
+    Importing requirements from an export
   </a>
   
 </li>
@@ -2376,39 +2376,39 @@
                   </a>
                 
                 
-                <h1 id="exporter-des-exigences">Exporter des exigences</h1>
-<h2 id="exporter-des-exigences-depuis-la-bibliotheque">Exporter des exigences depuis la bibliothèque</h2>
-<p>Squash TM permet d’exporter au format .xls une arborescence d'exigences. Cette fonctionnalité est très souvent utilisée pour la sauvegarde de données ou la <a href="#importer-des-exigences-a-partir-dun-export">modification de données en masse</a>.</p>
-<p>Le nom du fichier d'export est par défaut  « export-exigences_aaaammjj_hhmmss » mais peut être modifié.</p>
-<p>Sélectionner les éléments (projets, dossiers et/ou exigences) à exporter dans la bibliothèque (en sélection simple ou multiple) puis cliquer sur le bouton <strong>[Exporter]</strong>. La sélection peut porter sur des éléments de plusieurs projets. </p>
+                <h1 id="exporting-requirements">Exporting requirements</h1>
+<h2 id="exporting-requirements-from-the-library">Exporting requirements from the library</h2>
+<p>Squash TM allows you to export a tree of requirements in the .xls format. This feature is often used to save or mass modify data <a href="#importer-des-exigences-a-partir-dun-export">modification de données en masse</a>.</p>
+<p>The export file's default name is "export-exigences_aaaammjj_hhmmss" by default but it can be modified. </p>
+<p>In the library, select the items you want to export (the selection can be continuous or discontinuous) then click on the <strong>[Export]</strong> button. You can select items from different projects. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Il est possible d’exporter les champs de type "texte riche" avec leurs balises HTML (afin de conserver la mise en forme lors d’un futur import) en cochant la case « Conserver le format des textes riches ». Cette dernière peut être décochée, dans le but de faciliter la lecture des champs dans  l’export.</p>
+<p>You can export "rich text" fields with their HTML tags (to keep their formatting during a future import) Il est possible d’exporter les champs de type "texte riche" avec leurs balises HTML (afin de conserver la mise en forme lors d’un futur import) by checking the "Keep rich text format" box. This box can also be left unchecked to make the reading of fields easier in the export.</p>
 </div>
-<p><strong>Exporter des exigences avec des associations entres exigences et cas de test</strong></p>
-<p>Les associations avec d'autres exigences et avec des cas de test sont également exportées et se trouvent respectivement dans les onglets "LINK_REQ_REQ" et "LINK_REQ_TC".</p>
-<h2 id="importer-des-exigences-a-partir-dun-export">Importer des exigences à partir d’un export</h2>
-<p>Squash permet d'importer un fichier précédemment exporter depuis l'outil. Cette technique est utile lorsque l'on souhaite modifier en masse des données ou faire une restauration de données.</p>
-<p><strong>Pour importer un fichier d'export d'exigences, voici la marche à suivre :</strong></p>
+<p><strong>Exporting requirements with links between requirements and test cases</strong></p>
+<p>Links to other requirements and test cases will also be exported. They are respectively in the "LINK_REQ_REQ" and "LINK_REQ_TC" tabs. </p>
+<h2 id="importing-requirements-from-an-export">Importing requirements from an export</h2>
+<p>Squash TM allows you to import what you have previously exported. This is useful when you want to mass modify or mass restore data.</p>
+<p><strong>To import a requirements export file, please follow these steps:</strong></p>
 <ol>
-<li>Exporter la sélection souhaitée (Projets, dossiers, exigences) au format .xls</li>
-<li>Ouvrir le fichier exporté et ajouter la colonne "ACTION" dans l'onglet "REQUIREMENT". En première position dans le fichier, elle doit contenir la valeur :<ul>
-<li>"C" pour créer une nouvelle exigence</li>
-<li>"U" pour mettre à jour une exigence  </li>
+<li>Export the selected items (projects, folders, requirements) to .xls format</li>
+<li>Open the exported file and add the "ACTION" column in the "REQUIREMENT" tab. Ouvrir le fichier exporté et ajouter la colonne "ACTION" dans l'onglet "REQUIREMENT". It must be in the first position in the file and contain the values:<ul>
+<li>"C" to create a new requirement;</li>
+<li>"U" to update a requirement;  </li>
 </ul>
 </li>
-<li>Apporter les modifications voulues en respectant la syntaxe pour chaque colonne</li>
-<li>Importer le nouveau fichier</li>
+<li>Modify as you want by respecting the syntax in each column;</li>
+<li>Import the new file.</li>
 </ol>
-<p>Pour importer les exigences dans un nouveau projet ou à un autre emplacement dans l'arborescence, la colonne "REQ_PATH" est à modifier.</p>
+<p>To import new requirements to a new project or another location within the tree, you have to modify the "REQ_PATH" column. </p>
 <div class="admonition warning">
 <p class="admonition-title">Focus</p>
-<p>Si le libellé des objets contient le caractère '/' il faut l'échapper dans le chemin de l'exigence (dans la colonne "REQ_PATH") au moment de l'import. <br/>L’échappement est indiqué par le caractère ‘\’. 
-<br/><strong>Par exemple:</strong> <br/>le nom du projet est "Projet1/Appli" et le nom de l'exigence est "Exi1/Android". La colonne "REQ_PATH" doit être renseignée ainsi : "/Projet1\/Appli/Exi1\/Android"</p>
+<p>If the description of the objects contains a "/", you must drop it in the requirement path (in the "REQ_PATH" column) during the import. <br/>You must indicate this with a "\". 
+<br/><strong>For example:</strong> <br/>the name of the project "Project1/App" and the requirement's name is "Req1/Android". The "REQ_PATH" column must be filled in as follows: "/Project1\/App/Req1\/Android"</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">En savoir plus</p>
-<p>Pour compléter un fichier d'import, consulter la page "<a href="./importer-exigences.md#renseigner-un-fichier-dimport-dexigences">Renseigner un fichier d'import d'exigences</a>". </p>
+<p>To complete an import file, consult the page "<a href="./importer-exigences.md#renseigner-un-fichier-dimport-dexigences">Renseigner un fichier d'import d'exigences</a>". </p>
 </div>
                 
               
